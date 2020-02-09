@@ -180,7 +180,8 @@
   width: 100%;
 }
 * #fullpage .section.type {
-  background-image: url(https://lh3.googleusercontent.com/proxy/lzTm7zt-O0ldhi-JWgVwx3C1Lw7pPlLiXys4tSOia4edipYO05PkSnwOLnnf1bcYZnkGii-crivptb9QsqNK2XaURfBE5pv19cSm-k7fFV1JuwTIMa-SX3XjhZYvL1yNK31264Xyrfknmjt0c98DSpiPgHoLU38uE--YOrjgyAuQVVDZOw);
+  background-image: url(https://lh3.googleusercontent.com/proxy/wiHxy4Jd0hR0tYSFKEddWroKuACM_p4XgkBqck4J6Jg9asaYn1iuiH1q0VKnhMtg3axlXFdF465rKO3gFwW2qhTXsIkB3ja0QgbOT8x1Y_GIW0Nm2PSiB8YhnNn2d__QLAks5Qxokbo);
+  background-position: 0 400px;
   background-size: cover;
 }
 * #fullpage .section.type .thumbnails {
