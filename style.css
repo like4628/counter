@@ -10,7 +10,10 @@
 * a {
   text-decoration: none !important;
 }
-* .information h1, * .information h5, * .information P, * .information h3 {
+* .information h1,
+* .information h5,
+* .information P,
+* .information h3 {
   color: #fff;
 }
 * .information h5 {
@@ -96,7 +99,7 @@
   transition: 0.3s;
 }
 * .header .navBar .response-page:target .resMenu .responseList:hover {
-  color: #46E6F8;
+  color: #46e6f8;
 }
 * .header .navBar .right {
   padding: 5px;
@@ -116,14 +119,16 @@
   transition: 0.3s;
 }
 * .header .navBar .right .group .item a:hover {
-  color: #46E6F8;
+  color: #46e6f8;
 }
-* .header .navBar .right .group .line, * .header .navBar .right .group .fb {
+* .header .navBar .right .group .line,
+* .header .navBar .right .group .fb {
   margin-left: 10px;
 }
-* .header .navBar .right .group .line .fab, * .header .navBar .right .group .fb .fab {
+* .header .navBar .right .group .line .fab,
+* .header .navBar .right .group .fb .fab {
   font-size: 32px;
-  color: #46E6F8;
+  color: #46e6f8;
 }
 * #fullpage .section.hero-bg {
   background-image: url(https://image.freepik.com/free-vector/abstract-futuristic-technology-background-with-digital-number-timer-countdown_115579-256.jpg);
@@ -144,14 +149,14 @@
 * #fullpage .buybtn {
   width: 110px;
   height: 50px;
-  border: 2px solid #46E6F8;
+  border: 2px solid #46e6f8;
   color: #fff;
   line-height: 30px;
   font-size: 20px;
   margin-top: 40px;
 }
 * #fullpage .buybtn:hover {
-  background-color: #46E6F8;
+  background-color: #46e6f8;
 }
 * #fullpage .down {
   color: #fff;
@@ -167,10 +172,6 @@
   font-size: 32px;
 }
 * #fullpage .section.about {
-  background-color: #333;
-  background-image: url(https://secure.static.tumblr.com/34abc9b3b86d41562689ae45823a69f2/seqdekl/4uGo9r2v3/tumblr_static_tumblr_static_filename_640.gif);
-  background-position: center;
-  background-size: cover;
 }
 * #fullpage .section.about .information .about-img img {
   position: absolute;
@@ -179,9 +180,28 @@
   transform: translate(-50%, -50%);
   width: 100%;
 }
-* #fullpage .section.type {
-  background-image: url(https://img95.699pic.com/photo/40140/9629.gif_wh860.gif);
+
+#particles-js {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0e0c2b;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
+}
+#particles-js-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1a1a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 * #fullpage .section.type .thumbnails {
   padding-top: 80px;
@@ -190,7 +210,8 @@
   text-align: center;
   padding-top: 20px;
 }
-* #fullpage .section.type .owl-prev, * #fullpage .section.type .owl-next {
+* #fullpage .section.type .owl-prev,
+* #fullpage .section.type .owl-next {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -219,22 +240,23 @@
   max-width: 100%;
   max-height: 100%;
 }
-* #fullpage .section.type .thumbnail h5, * #fullpage .section.type .thumbnail p {
+* #fullpage .section.type .thumbnail h5,
+* #fullpage .section.type .thumbnail p {
   padding-top: 10px;
 }
 * #fullpage .section.type .thumbnail h5 {
-  color: #46E6F8;
+  color: #46e6f8;
 }
 * #fullpage .section.type .thumbnail p {
   color: #fff;
 }
 * #fullpage .section.type .thumbnail .productName {
-  color: #46E6F8;
+  color: #46e6f8;
 }
-* #fullpage .section.function {
-  background-color: #333;
+#fullpage .section.function .information-function .title {
+  color: #fff;
 }
-* #fullpage .section.function .information-function h1 {
+#fullpage .section.function .information-function .eng {
   color: #fff;
   padding-bottom: 80px;
 }
@@ -242,7 +264,8 @@
   text-align: center;
   padding-top: 20px;
 }
-* #fullpage .section.function .owl-prev, * #fullpage .section.function .owl-next {
+* #fullpage .section.function .owl-prev,
+* #fullpage .section.function .owl-next {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -275,11 +298,12 @@
 * #fullpage .section.function .video-box .video-img .playIcon {
   z-index: 2;
 }
-* #fullpage .section.function .video-box h5, * #fullpage .section.function .video-box p {
+* #fullpage .section.function .video-box h5,
+* #fullpage .section.function .video-box p {
   padding-top: 20px;
 }
 * #fullpage .section.function .video-box h5 {
-  color: #46E6F8;
+  color: #46e6f8;
 }
 * #fullpage .section.function .video-box p {
   color: #fff;
@@ -293,7 +317,7 @@
   padding-top: 50px;
 }
 * #fullpage .section.contact .contact-Info h6 {
-  color: #46E6F8;
+  color: #46e6f8;
 }
 * #fullpage .section.contact .contact-Info p {
   color: #fff;
@@ -303,7 +327,7 @@
 }
 * #fullpage .section.contact .contactPic .contact-imgbox {
   width: 100%;
-  padding-top: calc(100% * 9 / 16 );
+  padding-top: calc(100% * 9 / 16);
 }
 * #fullpage .section.contact .contactPic .contact-imgbox img {
   border-radius: 10px;
@@ -322,16 +346,17 @@
 * #fullpage .section.footer h6 {
   margin-bottom: 12px;
 }
-* #fullpage .section.footer a, * #fullpage .section.footer p {
+* #fullpage .section.footer a,
+* #fullpage .section.footer p {
   color: #fff;
   transition: 0.1s;
   padding-top: 5px;
 }
 * #fullpage .section.footer a:hover {
-  color: #46E6F8;
+  color: #46e6f8;
 }
 * #fullpage .section.footer .contactAnchor h6 {
-  color: #46E6F8;
+  color: #46e6f8;
 }
 * #fullpage .section.footer .iconAnchor {
   font-size: 32px;
@@ -379,7 +404,7 @@
   transform: translateY(-50%);
   width: 0;
   height: 20px;
-  background-color: #46E6F8;
+  background-color: #46e6f8;
   transition: 0.3s;
 }
 * #rightMenu .active .rightItem:before {
@@ -389,7 +414,7 @@
   left: 40px;
 }
 * #topIcon .top {
-  color: #46E6F8;
+  color: #46e6f8;
   position: fixed;
   font-size: 32px;
   right: 3%;
