@@ -245,6 +245,11 @@
 
 * #fullpage .section.type .thumbnails {
   padding-top: 60px;
+
+}
+
+#fullpage .section.type .owl-stage-outer {
+  padding: 10px 0;
 }
 
 * #fullpage .section.type .owl-nav {
@@ -273,9 +278,23 @@
   margin-left: 100px;
 }
 
+
+
 #fullpage .section.type .thumbnail {
-  padding: 0 30px;
+  padding: 0 20px;
+  /* border: 1px solid #fff; */
+  border-radius: 5px;
 }
+
+#fullpage .section.type .owl-item {
+  transition: .4s
+}
+
+#fullpage .section.type .owl-item:hover {
+  border-radius: 5px;
+  box-shadow: 0 0 3px 5px #fff;
+}
+
 
 * #fullpage .section.type .thumbnail .img-box {
   width: 100%;
@@ -292,7 +311,7 @@
 }
 
 * #fullpage .section.type .thumbnail .textArea {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 * #fullpage .section.type .thumbnail h5,
@@ -514,7 +533,7 @@
   position: fixed;
   font-size: 32px;
   right: 3%;
-  bottom: 5%;
+  bottom: 3%;
   transform: rotate(-45deg);
   transition: 0.3s;
   animation: rocketUp 0.3s;
