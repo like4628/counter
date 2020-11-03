@@ -176,19 +176,35 @@
   opacity: 0.3;
 }
 
-* #fullpage .buybtn {
-  width: 110px;
-  height: 50px;
-  border: 2px solid #46e6f8;
-  color: #fff;
-  line-height: 30px;
-  font-size: 20px;
-  margin-top: 20px;
+
+.svgBox svg {
+  width: 100%;
+  fill: transparent;
 }
 
-* #fullpage .buybtn:hover {
-  background-color: #46e6f8;
+.svgBox span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+  line-height: 80px;
+  color: #fff;
 }
+
+.svgBox .buybtn {
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  width: 222px;
+  /* border: 2px solid #46e6f8; */
+}
+
+.svgBox .buybtn:hover svg {
+  fill: #40d7e7a6
+}
+
 
 * #fullpage .down {
   color: #fff;
@@ -205,7 +221,6 @@
   font-size: 32px;
 }
 
-* #fullpage .section.about {}
 
 * #fullpage .section.about .information .about-img img {
   position: absolute;
@@ -577,16 +592,31 @@
     display: none;
   }
 
-  #fullpage .buybtn {
-    width: 80%;
-    margin: 0 30px;
-    height: 50px;
-    border: 2px solid #46e6f8;
-    color: #fff;
-    line-height: 30px;
+
+  .svgBox span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     font-size: 20px;
-    margin-top: 20px;
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
   }
+
+  .svgBox .buybtn {
+    position: absolute;
+    left: 0%;
+    top: 30%;
+    width: 250px;
+    margin: 20px 40px;
+  }
+
+  .svgBox .buybtn:hover svg {
+    fill: #40d7e7a6
+  }
+
+
 
   .navBar .left .icon img {
     display: none;
