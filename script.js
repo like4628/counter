@@ -16,8 +16,10 @@ $(document).ready(function() {
     margin:10,
     nav:true,
     dots: false,
-    stagePadding: 20,
+    stagePadding: 10,
     navText: [],
+    
+    mouseDrag: false,
     responsive:{
         0:{
             items:1

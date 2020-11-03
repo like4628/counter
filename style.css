@@ -245,7 +245,6 @@
 
 * #fullpage .section.type .thumbnails {
   padding-top: 60px;
-
 }
 
 #fullpage .section.type .owl-stage-outer {
@@ -291,8 +290,9 @@
 }
 
 #fullpage .section.type .owl-item:hover {
+  border: 1px solid rgb(81, 216, 221);
   border-radius: 5px;
-  box-shadow: 0 0 3px 5px #fff;
+  box-shadow: 0 0 10px 5px rgb(81, 216, 221) inset;
 }
 
 
@@ -337,6 +337,7 @@
 
 #fullpage .section.function .video-boxes {
   padding-top: 60px;
+  padding-right: 20px;
 }
 
 * #fullpage .section.function .owl-nav {
@@ -493,16 +494,17 @@
   margin-top: 8px;
   margin-bottom: 8px;
   font-size: 20px;
-  height: 20px;
+  height: 30px;
   line-height: 15px;
   text-decoration: none;
   color: #fff;
-  padding: 2px;
+  padding: 3px;
 }
 
 * #rightMenu .rightItem span {
   position: absolute;
-  left: 50%;
+  top: 6px;
+  left: 70%;
   transform: translateX(-50%);
   transition: 0.3s;
 }
@@ -525,7 +527,7 @@
 }
 
 * #rightMenu .active span {
-  left: 40px;
+  left: 25%;
 }
 
 * #topIcon .top {
