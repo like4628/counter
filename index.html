@@ -1,351 +1,413 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - counter product</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" >
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" type="image/x-icon">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.css'><link rel="stylesheet" href="./style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CodePen - counter product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png"
+      type="image/x-icon">
+    <link rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css'>
+    <link rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <link rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.css'><link
+      rel="stylesheet" href="./style.css">
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="wrapper">
-  <header class="header">
-    <div class="container">
-      <div class="navBar">
-        <div class="left">
-          <a class="icon" href="http://www.meicheng.com.tw/" target="_blank">
-          </a>
-        </div>
-        <div class="menu-response"><a class="bar-box" href="#response">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div></a>
-          <div class="response-page" id="response"><a class="response-close" href="#"> 
-              <div class="bar bar4"></div>
-              <div class="bar bar5"></div></a>
-            <ul class="resMenu">
-              <li><a class="responseList" href="#IntroPage">About</a></li>
-              <li> <a class="responseList" href="#MasterpiecePage">Type</a></li>
-              <li> <a class="responseList" href="#ElitePage">function</a></li>
-              <li> <a class="responseList" href="#Remarkable">Contact</a></li>
-            </ul>
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="navBar">
+            <div class="left">
+              <a class="icon" href="http://www.meicheng.com.tw/"
+                target="_blank">
+              </a>
+            </div>
+            <div class="menu-response"><a class="bar-box" href="#response">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div></a>
+              <div class="response-page" id="response"><a class="response-close"
+                  href="#">
+                  <div class="bar bar4"></div>
+                  <div class="bar bar5"></div></a>
+                <ul class="resMenu">
+                  <li><a class="responseList" href="#IntroPage">About</a></li>
+                  <li> <a class="responseList" href="#MasterpiecePage">Type</a></li>
+                  <li> <a class="responseList" href="#ElitePage">function</a></li>
+                  <li> <a class="responseList" href="#Remarkable">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="right">
+              <ul class="group">
+                <li class="item"><a href="#IntroPage">About</a></li>
+                <li class="item"><a href="#MasterpiecePage">type</a></li>
+                <li class="item"><a href="#ElitePage">function</a></li>
+                <li class="item"><a href="#Remarkable">Contact</a></li><a
+                  class="line" href="#"> <i class="fab fa-line"></i></a><a
+                  class="fb" href="https://www.facebook.com/meichengaudiovideo/"
+                  target="_blank"><i class="fab fa-facebook-square"></i></a>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="right">
-          <ul class="group">
-            <li class="item"><a href="#IntroPage">About</a></li>
-            <li class="item"><a href="#MasterpiecePage">type</a></li>
-            <li class="item"><a href="#ElitePage">function</a></li>
-            <li class="item"><a href="#Remarkable">Contact</a></li><a class="line" href="#"> <i class="fab fa-line"></i></a><a class="fb" href="https://www.facebook.com/meichengaudiovideo/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      </header>
+      <div id="fullpage">
+        <div class="section hero-bg" data-anchor="TrendPage">
+          <div class="container">
+            <div class="information">
+              <h1>Time Machine </h1>
+              <h3>Trend & Multy-Function Timer</h3>
+            </div>
+            <!--Button SVG Start -->
+            <div class="svgBox">
+              <a href="#Remarkable" class="buybtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="353" height="121"
+                  viewBox="0 0 353 121">
+                  <g id="Group_1" data-name="Group 1"
+                    transform="translate(-279.5 -71.5)">
+                    <path class="Path_1" data-name="Path 1"
+                      d="M580,241H908l24,16v88H604l-24-16V233h72l8,8"
+                      transform="translate(-300 -161)" stroke="#46e6f8"
+                      stroke-width="3" />
+                      <path class="Path_2" data-name="Path 2"
+                        d="M852,345l8,8h72v-8" transform="translate(-300 -161)"
+                        stroke="#46e6f8" stroke-width="3" />
+                      </g>
+                    </svg>
+                    <span>Buy it</span>
+                  </a>
+
+                </div>
+              </div>
+              <!--Button SVG End -->
+              <a class="down" href="#IntroPage">
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </div>
+
+            <!--About Section Start-->
+            <div class="section about" data-anchor="IntroPage">
+              <canvas id="ad" height="518" width="1920"
+                style="position:absolute;z-index:-1;left: 0px;top: 0px"></canvas>
+              <div class="container">
+                <div class="information">
+
+                  <div class="row">
+                    <div class="col-sm-5 about-word">
+                      <h1>你在找計時器嗎?</h1>
+                      <h5>一個強大且多功能的計時器</h5>
+                      <P>這款倒數計時器有正數、倒數、定時蜂鳴、以及多段響鈴功能，可以用在健身計時、開標室開標、綜藝節目計時，以及各大運動賽事的場合。我們經由客製化的設計滿足客戶的計時需求。</P>
+                    </div>
+                    <div class="col-sm-7 about-img"><img
+                        src="./CK-8R6_Logo1.png"
+                        alt="" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--About Section End-->
+            <!--Type Section Start-->
+            <div class="section type" data-anchor="MasterpiecePage">
+              <div id="particles-js"></div>
+              <div class="container">
+                <div class="information">
+                  <h1>尺寸(Size)</h1>
+                </div>
+                <div class="thumbnails owl-carousel">
+                  <div class="thumbnail">
+                    <a href="https://i.imgur.com/0UnFXdK.png"
+                      data-fancybox="pic">
+                      <div class="img-box">
+                        <img src="https://i.imgur.com/0UnFXdK.png" alt="" />
+                      </div>
+                    </a>
+                    <div class="textArea">
+                      <h5 class="name">8吋4位數</h5>
+                      <p class="type">型號: CK8R4</p>
+                      <p class="size">尺寸: 710 (W) x 250 (H) x 55 (D) mm</p>
+                    </div>
+
+                  </div>
+                  <div class="thumbnail">
+                    <a href="https://i.imgur.com/387pfTm.png"
+                      data-fancybox="pic">
+                      <div class="img-box">
+                        <img src="https://i.imgur.com/387pfTm.png" alt="" />
+                      </div>
+                    </a>
+                    <div class="textArea">
+                      <h5 class="name">4吋6位數</h5>
+                      <p class="type">型號: CK8R4</p>
+                      <p class="size">尺寸: 725 (W) x 160 (H) x 40 (D) mm</p>
+                    </div>
+
+                  </div>
+                  <div class="thumbnail">
+                    <a href="https://i.imgur.com/Y2Bydeb.png"
+                      data-fancybox="pic">
+                      <div class="img-box">
+                        <img src="https://i.imgur.com/Y2Bydeb.png" alt="" />
+                      </div>
+                    </a>
+                    <div class="textArea">
+                      <h5 class="name">4吋4位數</h5>
+                      <p class="type">型號: CK8R4</p>
+                      <p class="size">尺寸: 505 (W) x 160 (H) x 40 (D) mm</p>
+                    </div>
+
+                  </div>
+                  <div class="thumbnail">
+                    <a href="https://i.imgur.com/tZgbX3v.png"
+                      data-fancybox="pic">
+                      <div class="img-box">
+                        <img src="https://i.imgur.com/tZgbX3v.png" alt="" />
+                      </div>
+                    </a>
+                    <div class="textArea">
+                      <h5 class="name">2.3吋6位數</h5>
+                      <p class="type">型號: CK8R4</p>
+                      <p class="size">尺寸: 410 (W) x 100 (H) x 40 (D) mm.</p>
+                    </div>
+
+                  </div>
+                  <div class="thumbnail">
+                    <a href="https://i.imgur.com/m7RL5hz.png"
+                      data-fancybox="pic">
+                      <div class="img-box">
+                        <img src="https://i.imgur.com/m7RL5hz.png" alt="" />
+                      </div>
+                    </a>
+                    <div class="textArea">
+                      <h5 class="name">2.3吋4位數</h5>
+                      <p class="type">型號: CK8R4</p>
+                      <p class="size">尺寸: 290 (W) x 180 (H) x 40 (D) mm</p>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- <div class="btn buybtn">Buy now</div> -->
+              </div>
+            </div>
+            <!--Type Section End-->
+            <!-- function Section Start -->
+            <div class="section function" data-anchor="ElitePage">
+              <div id="particles-js-line"></div>
+              <div class="container">
+                <div class="information-function">
+                  <h1 class='title'>模式 ( Mode ) </h1>
+
+                </div>
+                <div class="video-boxes owl-carousel">
+                  <div class="video-box time">
+                    <a href="https://www.youtube.com/watch?v=ZjM8zmG0N84"
+                      data-fancybox="data-fancybox">
+                      <div class="video-img">
+                        <img class="playIcon"
+                          src="https://i2.wp.com/harvestenglish.tv/wp-content/uploads/2018/01/youtube-logo-play-icon-png-24-1.png?ssl=1"
+                          alt="" />
+                        <img
+                          src="https://images.idgesg.net/images/article/2018/10/ai_artificial-intelligence_circuit-board_circuitry_mother-board_nodes_computer-chips-100777423-large.jpg"
+                          alt="" />
+                      </div>
+                    </a>
+                    <h5 class="name">時間模式</h5>
+                    <p class="function1">一般的時間模式，可以用來當作時間顯示使用</p>
+                  </div>
+                  <div class="video-box timeBuzz">
+                    <div class="video-img">
+                      <img class="playIcon"
+                        src="https://i2.wp.com/harvestenglish.tv/wp-content/uploads/2018/01/youtube-logo-play-icon-png-24-1.png?ssl=1"
+                        alt="" />
+                      <img
+                        src="https://images.idgesg.net/images/article/2018/10/ai_artificial-intelligence_circuit-board_circuitry_mother-board_nodes_computer-chips-100777423-large.jpg"
+                        alt="" />
+                    </div>
+                    <h5 class="name">時間蜂鳴模式</h5>
+                    <p class="function2">一般的時間模式，但是可以設定區間內多少分鐘後蜂鳴。EX:早上8點到晚上10點內，可以設定1小時蜂鳴一次，所以每一小時會蜂鳴一次依此類推。</p>
+                  </div>
+                  <div class="video-box countUp">
+                    <div class="video-img">
+                      <img class="playIcon"
+                        src="https://i2.wp.com/harvestenglish.tv/wp-content/uploads/2018/01/youtube-logo-play-icon-png-24-1.png?ssl=1"
+                        alt="" />
+                      <img
+                        src="https://images.idgesg.net/images/article/2018/10/ai_artificial-intelligence_circuit-board_circuitry_mother-board_nodes_computer-chips-100777423-large.jpg"
+                        alt="" />
+                    </div>
+                    <h5 class="name">上數模式</h5>
+                    <p class="function3">上數計時模式，可以用來測試做一件事情需要花多少時間</p>
+                  </div>
+                  <div class="video-box countDown">
+                    <div class="video-img">
+                      <img class="playIcon"
+                        src="https://i2.wp.com/harvestenglish.tv/wp-content/uploads/2018/01/youtube-logo-play-icon-png-24-1.png?ssl=1"
+                        alt="" />
+                      <img
+                        src="https://images.idgesg.net/images/article/2018/10/ai_artificial-intelligence_circuit-board_circuitry_mother-board_nodes_computer-chips-100777423-large.jpg"
+                        alt="" />
+                    </div>
+                    <h5 class="name">下數模式</h5>
+                    <p class="function4">下數計時模式，可以測試在指定時間內是否可以完成</p>
+                  </div>
+                  <div class="video-box boxControl">
+                    <div class="video-img">
+                      <img class="playIcon"
+                        src="https://i2.wp.com/harvestenglish.tv/wp-content/uploads/2018/01/youtube-logo-play-icon-png-24-1.png?ssl=1"
+                        alt="" />
+                      <img
+                        src="https://images.idgesg.net/images/article/2018/10/ai_artificial-intelligence_circuit-board_circuitry_mother-board_nodes_computer-chips-100777423-large.jpg"
+                        alt="" />
+                    </div>
+                    <h5 class="name">外控模式</h5>
+                    <p class="function5">方便遠端控制計時器，也可以使用遙控器屬於附加功能</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- function Section End -->
+            <!-- contact Section Start -->
+            <div class="section contact" data-anchor="Remarkable">
+              <div class="container">
+                <h1>Contact</h1>
+                <h3>開始效率的計時!</h3>
+                <div class="row">
+                  <div class="col-sm-5">
+                    <div class="contact-Info">
+                      <div class="email">
+                        <h6>Email</h6>
+                        <p> a9999729@ms16.hinet.net</p>
+                      </div>
+                      <div class="tel">
+                        <h6>Tel</h6>
+                        <p>(02)-82280311</p>
+                      </div>
+                      <div class="address">
+                        <h6>Address</h6>
+                        <p>新北市 中和區 建八路 2號 13樓</p>
+                      </div>
+                      <div class="line">
+                        <h6>LINE ID</h6>
+                        <p>Meicheng</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-7">
+                    <div class="contactPic">
+                      <div class="contact-imgbox"><img
+                          src="https://images.669pic.com/element_banner/33/40/95/94/93c1dce4a6f6a77914d905013c288614.jpg"
+                          alt="" /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- contact Section End -->
+            <div class="section fp-auto-height footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="titleAnchor"><a href="#IntroPage">
+                        <h6>About</h6></a><a href="#MasterpiecePage">
+                        <h6>Type</h6></a><a href="#ElitePage">
+                        <h6>Function</h6></a><a href="#Remarkable">
+                        <h6>Contact</h6></a></div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="purchaseAnchor"><a href="#">
+                        <h6>FAQ</h6></a><a href="#">
+                        <h6>Products</h6></a><a
+                        href="http://www.meicheng.com.tw/" target="_blank">
+                        <h6>Company</h6></a></div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="contactAnchor">
+                      <div class="email">
+                        <h6>Email</h6>
+                        <p> a9999729@ms16.hinet.net</p>
+                      </div>
+                      <div class="tel">
+                        <h6>Tel</h6>
+                        <p>02-82280311</p>
+                      </div>
+                      <div class="address">
+                        <h6>Address</h6>
+                        <p>新北市 中和區 建八路 2號 13樓</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 offset-sm-5">
+                    <div class="iconAnchor"><a href="#"><i class="fab fa-line"></i></a><a
+                        href="https://www.facebook.com/meichengaudiovideo/"
+                        target="_blank"><i class="fab fa-facebook-square"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--rightMenu Start-->
+          <ul id="rightMenu">
+            <li data-menuanchor="TrendPage">
+              <a class="rightItem" href="#TrendPage">
+                <span>T</span>
+              </a>
+            </li>
+            <li data-menuanchor="IntroPage">
+              <a class="rightItem" href="#IntroPage">
+                <span>I</span>
+              </a>
+            </li>
+            <li data-menuanchor="MasterpiecePage">
+              <a class="rightItem" href="#MasterpiecePage">
+                <span>M</span>
+              </a>
+            </li>
+            <li data-menuanchor="ElitePage">
+              <a class="rightItem" href="#ElitePage">
+                <span>E</span>
+              </a>
+            </li>
+            <li data-menuanchor="Remarkable">
+              <a class="rightItem" href="#Remarkable">
+                <span>R</span>
+              </a>
+            </li>
           </ul>
+          <!--rightMenu End-->
+          <!--Top Link Start-->
+          <div id="topIcon"><a class="top" href="#TrendPage"><i class="fas
+                fa-rocket"></i></a></div>
         </div>
-      </div>
-    </div>
-  </header>
-  <div id="fullpage">
-    <div class="section hero-bg" data-anchor="TrendPage">
-      <div class="container">
-        <div class="information">
-          <h1>Show you </h1>
-          <h3>Trend & Multy-Function Timer</h3>
-        </div>
-    <!--Button SVG Start -->
-        <div class="svgBox"> 
-          <a href="#Remarkable" class="buybtn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="353" height="121" viewBox="0 0 353 121">
-              <g id="Group_1" data-name="Group 1" transform="translate(-279.5 -71.5)">
-                <path class="Path_1" data-name="Path 1" d="M580,241H908l24,16v88H604l-24-16V233h72l8,8" transform="translate(-300 -161)"  stroke="#46e6f8" stroke-width="3"/>
-                <path class="Path_2" data-name="Path 2" d="M852,345l8,8h72v-8" transform="translate(-300 -161)"  stroke="#46e6f8" stroke-width="3"/>
-              </g>
-            </svg>
-            <span>Buy it</span>
-          </a>
-      
-        </div>
-      </div>
-    <!--Button SVG End -->
-      <a class="down" href="#IntroPage">
-        <i class="fas fa-chevron-down"></i>
-      </a>
-    </div>
+        <!--Top Link End-->
 
-    <!--About Section Start-->
-    <div class="section about" data-anchor="IntroPage">
-      <canvas id="ad" height="518" width="1920" style="position:absolute;z-index:-1;left: 0px;top: 0px"></canvas>
-      <div class="container">
-        <div class="information">
-          
-          <div class="row">
-            <div class="col-sm-5 about-word">
-              <h1>你在找計時器嗎?</h1>
-              <h5>一個強大且多功能的計時器</h5>
-              <P>這款倒數計時器有正數、倒數、定時蜂鳴、以及多段響鈴功能，可以用在健身計時、開標室開標、綜藝節目計時，以及各大運動賽事的場合。我們經由客製化的設計滿足客戶的計時需求。</P>
-            </div>
-            <div class="col-sm-7 about-img"><img src="http://www.meicheng.com.tw/m/img/CK-8R6/CK-8R6_Logo1.png" alt=""/></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--About Section End-->
-    <!--Type Section Start-->
-    <div class="section type" data-anchor="MasterpiecePage">
-      <div id="particles-js"></div>
-      <div class="container">
-        <div class="information">
-          <h1>尺寸(Size)</h1>
-        </div>
-        <div class="thumbnails owl-carousel">
-          <div class="thumbnail">
-            <a href="https://i.imgur.com/0UnFXdK.png" data-fancybox="pic">
-              <div class="img-box">
-                <img src="https://i.imgur.com/0UnFXdK.png" alt=""/>
-              </div>
-            </a>
-            <div class="textArea">
-              <h5 class="name">8吋4位數</h5>
-              <p class="type">型號: CK8R4</p>
-              <p class="size">尺寸: 710 (W) x 250 (H) x 55 (D) mm</p>
-            </div>
-            
-          </div>
-          <div class="thumbnail">
-            <a href="https://i.imgur.com/387pfTm.png" data-fancybox="pic">
-              <div class="img-box">
-                <img src="https://i.imgur.com/387pfTm.png" alt=""/>
-              </div>
-            </a>
-            <div class="textArea">
-              <h5 class="name">4吋6位數</h5>
-              <p class="type">型號: CK8R4</p>
-              <p class="size">尺寸: 725 (W) x 160 (H) x 40 (D) mm</p>
-            </div>
-            
-          </div>
-          <div class="thumbnail">
-            <a href="https://i.imgur.com/Y2Bydeb.png" data-fancybox="pic">
-              <div class="img-box">
-                <img src="https://i.imgur.com/Y2Bydeb.png" alt=""/>
-              </div>
-            </a>
-            <div class="textArea">
-              <h5 class="name">4吋4位數</h5>
-              <p class="type">型號: CK8R4</p>
-              <p class="size">尺寸: 505 (W) x 160 (H) x 40 (D) mm</p> 
-            </div>
-            
-          </div>
-          <div class="thumbnail">
-            <a href="https://i.imgur.com/tZgbX3v.png" data-fancybox="pic">
-              <div class="img-box">
-                <img src="https://i.imgur.com/tZgbX3v.png" alt=""/>
-              </div>
-            </a>
-            <div class="textArea">
-              <h5 class="name">2.3吋6位數</h5>
-              <p class="type">型號: CK8R4</p>
-              <p class="size">尺寸: 410 (W) x 100 (H) x 40 (D) mm.</p>
-            </div>
-            
-          </div>
-          <div class="thumbnail">
-            <a href="https://i.imgur.com/m7RL5hz.png" data-fancybox="pic">
-              <div class="img-box">
-                <img src="https://i.imgur.com/m7RL5hz.png" alt=""/>
-              </div>
-            </a>
-            <div class="textArea">
-              <h5 class="name">2.3吋4位數</h5>
-              <p class="type">型號: CK8R4</p>
-              <p class="size">尺寸: 290 (W) x 180 (H) x 40 (D) mm</p>
-            </div>
-            
-          </div>
-        </div>
-        <!-- <div class="btn buybtn">Buy now</div> -->
-      </div>
-    </div>
-    <!--Type Section End-->
-    <!-- function Section Start -->
-    <div class="section function" data-anchor="ElitePage">
-      <div id="particles-js-line"></div>
-      <div class="container">
-        <div class="information-function">
-          <h1 class='title'>模式 ( Mode ) </h1>
+        <!-- partial -->
 
-        </div>
-        <div class="video-boxes owl-carousel">
-          <div class="video-box time">
-            <a href="https://www.youtube.com/watch?v=ZjM8zmG0N84" data-fancybox="data-fancybox">
-              <div class="video-img">
-                <img class="playIcon" src="https://i2.wp.com/harvestenglish.tv/wp-content/uploads/2018/01/youtube-logo-play-icon-png-24-1.png?ssl=1" alt=""/>
-                <img src="https://images.idgesg.net/images/article/2018/10/ai_artificial-intelligence_circuit-board_circuitry_mother-board_nodes_computer-chips-100777423-large.jpg" alt=""/>
-              </div>
-            </a>
-            <h5 class="name">時間模式</h5>
-            <p class="function1">一般的時間模式，可以用來當作時間顯示使用</p>
-          </div>
-          <div class="video-box timeBuzz">
-            <div class="video-img">
-              <img class="playIcon" src="https://i2.wp.com/harvestenglish.tv/wp-content/uploads/2018/01/youtube-logo-play-icon-png-24-1.png?ssl=1" alt=""/>
-              <img src="https://images.idgesg.net/images/article/2018/10/ai_artificial-intelligence_circuit-board_circuitry_mother-board_nodes_computer-chips-100777423-large.jpg" alt=""/>
-            </div>
-            <h5 class="name">時間蜂鳴模式</h5>
-            <p class="function2">一般的時間模式，但是可以設定區間內多少分鐘後蜂鳴。EX:早上8點到晚上10點內，可以設定1小時蜂鳴一次，所以每一小時會蜂鳴一次依此類推。</p>
-          </div>
-          <div class="video-box countUp">
-            <div class="video-img">
-              <img class="playIcon" src="https://i2.wp.com/harvestenglish.tv/wp-content/uploads/2018/01/youtube-logo-play-icon-png-24-1.png?ssl=1" alt=""/>
-              <img src="https://images.idgesg.net/images/article/2018/10/ai_artificial-intelligence_circuit-board_circuitry_mother-board_nodes_computer-chips-100777423-large.jpg" alt=""/>
-            </div>
-            <h5 class="name">上數模式</h5>
-            <p class="function3">上數計時模式，可以用來測試做一件事情需要花多少時間</p>
-          </div>
-          <div class="video-box countDown">
-            <div class="video-img">
-              <img class="playIcon" src="https://i2.wp.com/harvestenglish.tv/wp-content/uploads/2018/01/youtube-logo-play-icon-png-24-1.png?ssl=1" alt=""/>
-              <img src="https://images.idgesg.net/images/article/2018/10/ai_artificial-intelligence_circuit-board_circuitry_mother-board_nodes_computer-chips-100777423-large.jpg" alt=""/>
-            </div>
-            <h5 class="name">下數模式</h5>
-            <p class="function4">下數計時模式，可以測試在指定時間內是否可以完成</p>
-          </div>
-          <div class="video-box boxControl">
-            <div class="video-img">
-              <img class="playIcon" src="https://i2.wp.com/harvestenglish.tv/wp-content/uploads/2018/01/youtube-logo-play-icon-png-24-1.png?ssl=1" alt=""/>
-              <img src="https://images.idgesg.net/images/article/2018/10/ai_artificial-intelligence_circuit-board_circuitry_mother-board_nodes_computer-chips-100777423-large.jpg" alt=""/>
-            </div>
-            <h5 class="name">外控模式</h5>
-            <p class="function5">方便遠端控制計時器，也可以使用遙控器屬於附加功能</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- function Section End -->
-    <!-- contact Section Start -->
-    <div class="section contact" data-anchor="Remarkable">
-      <div class="container">
-        <h1>Contact</h1>
-        <h3>開始效率的計時!</h3>
-        <div class="row">
-          <div class="col-sm-5">
-            <div class="contact-Info">
-              <div class="email">
-                <h6>Email</h6>
-                <p> a9999729@ms16.hinet.net</p>
-              </div>
-              <div class="tel">
-                <h6>Tel</h6>
-                <p>(02)-82280311</p>
-              </div>
-              <div class="address">
-                <h6>Address</h6>
-                <p>新北市 中和區 建八路 2號 13樓</p>
-              </div>
-              <div class="line">
-                <h6>LINE ID</h6>
-                <p>Meicheng</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-7">
-            <div class="contactPic">
-              <div class="contact-imgbox"><img src="https://images.669pic.com/element_banner/33/40/95/94/93c1dce4a6f6a77914d905013c288614.jpg" alt=""/></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- contact Section End -->
-    <div class="section fp-auto-height footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="titleAnchor"><a href="#IntroPage">
-                <h6>About</h6></a><a href="#MasterpiecePage">
-                <h6>Type</h6></a><a href="#ElitePage">
-                <h6>Function</h6></a><a href="#Remarkable">
-                <h6>Contact</h6></a></div>
-          </div>
-          <div class="col-sm-4">
-            <div class="purchaseAnchor"><a href="#">
-                <h6>FAQ</h6></a><a href="#">
-                <h6>Products</h6></a><a href="http://www.meicheng.com.tw/" target="_blank">
-                <h6>Company</h6></a></div>
-          </div>
-          <div class="col-sm-4">
-            <div class="contactAnchor">
-              <div class="email">
-                <h6>Email</h6>
-                <p> a9999729@ms16.hinet.net</p>
-              </div>
-              <div class="tel">
-                <h6>Tel</h6>
-                <p>02-82280311</p>
-              </div>
-              <div class="address">
-                <h6>Address</h6>
-                <p>新北市 中和區 建八路 2號 13樓</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 offset-sm-5">
-            <div class="iconAnchor"><a href="#"><i class="fab fa-line"></i></a><a href="https://www.facebook.com/meichengaudiovideo/" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--rightMenu Start-->
-  <ul id="rightMenu">
-    <li data-menuanchor="TrendPage">
-      <a class="rightItem" href="#TrendPage">
-        <span>T</span>
-      </a>
-    </li>
-    <li data-menuanchor="IntroPage"> 
-      <a class="rightItem" href="#IntroPage">
-        <span>I</span>
-      </a>
-    </li>
-    <li data-menuanchor="MasterpiecePage"> 
-      <a class="rightItem" href="#MasterpiecePage">
-        <span>M</span>
-      </a>
-    </li>
-    <li data-menuanchor="ElitePage">
-      <a class="rightItem" href="#ElitePage">
-        <span>E</span>
-      </a>
-    </li>
-    <li data-menuanchor="Remarkable">
-      <a class="rightItem" href="#Remarkable">
-        <span>R</span>
-      </a>
-    </li>
-  </ul>
-   <!--rightMenu End-->
-  <!--Top Link Start-->
-  <div id="topIcon"><a class="top" href="#TrendPage"><i class="fas fa-rocket"></i></a></div>
-</div>
-<!--Top Link End-->
+        <script
+          src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <script
+          src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js'></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script
+          src='https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js'></script>
+        <script
+          src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+        <script
+          src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.js'>
+</script><script
+          src="./script.js"></script>
 
-<!-- partial -->
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js'></script>
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.js'>
-</script><script  src="./script.js"></script>
-
-</body>
-</html>
+      </body>
+    </html>

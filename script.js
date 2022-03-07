@@ -49,7 +49,7 @@ $(document).ready(function() {
   for (var x = 0; x < columns; x++) drops[x] = 1;
   var ccolor = ["#0FF","#33B5E5", "#7DFF98", "#0099CC"];//新增顏色
   var cc = ccolor[Math.floor((Math.random() * ccolor.length))];
-
+console.log(cc)
   function draw() {
       ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
       ctx.fillRect(0, 0, ad.width, ad.height);
