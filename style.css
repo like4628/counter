@@ -254,8 +254,6 @@
   background-position: 50% 50%;
 }
 
-#fullpage .section.type .information h1 {}
-
 * #fullpage .section.type .thumbnails {
   padding-top: 60px;
 }
@@ -516,10 +514,10 @@
 
 * #rightMenu .rightItem span {
   position: absolute;
-  top: 6px;
+  top: 7px;
   left: 70%;
   transform: translateX(-50%);
-  transition: 0.3s;
+  transition: .7s;
 }
 
 * #rightMenu .rightItem:before {
@@ -530,9 +528,9 @@
   top: 50%;
   transform: translateY(-50%);
   width: 0;
-  height: 20px;
+  height: 26px;
   background-color: #46e6f8;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 * #rightMenu .active .rightItem:before {

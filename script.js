@@ -43,11 +43,11 @@ $(document).ready(function() {
   ad.width = window.innerWidth;
   var chinese = "onlyc7h3en2いやすい1ようе5ографи3че9ск11ое 0полستور1د: شر00كة تل ож"; //可以修改下落文字
   chinese = chinese.split("");
-  var font_size = 12; //可以修改文字大小
+  var font_size = 14; //可以修改文字大小
   var columns = ad.width / font_size;
   var drops = [];
   for (var x = 0; x < columns; x++) drops[x] = 1;
-  var ccolor = ["#0FF","#33B5E5", "#0099CC"];
+  var ccolor = ["#0FF","#33B5E5", "#7DFF98", "#0099CC"];//新增顏色
   var cc = ccolor[Math.floor((Math.random() * ccolor.length))];
 
   function draw() {
@@ -63,7 +63,7 @@ $(document).ready(function() {
       }
   }
 
-  setInterval(draw, 30);
+  setInterval(draw, 50);
 
   //Particle
   particlesJS("particles-js", {
